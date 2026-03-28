@@ -1,0 +1,38 @@
+.FirstPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+    height: 100vh;
+    background-color: #C77272;
+}
+
+.Title {
+    font-size: 3rem;
+    color: #df421e;
+    margin-bottom: 20px;
+}
+
+.Description {
+    font-size: 0.75rem;
+    color: #383832;
+    margin-bottom: 60px;
+}
+
+.Howtodo-button {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    background-color: #0d8581;
+    color:rgb(43, 235, 88);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.Start-button {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    background-color: #0d8581;
+    color:rgb(43, 235, 88);
+    border: 2px solid black;
+    border-radius: 10px;
+}
