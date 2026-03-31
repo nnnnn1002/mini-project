@@ -4,18 +4,18 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #e38c13;
+    background-color: #FAA733;
 }
 
 .Title {
     font-size: 10rem;
-    color: #df421e;
+    color: #C81E00;
     margin-bottom: 0px;
 }
 
 .Description {
     font-size: 1.5rem;
-    color: #383832;
+    color: #724200;
     margin-top: -10px;
     margin-bottom: 50px;
 }
@@ -23,18 +23,18 @@
 .Howtodo-button {
     padding: 15px 40px;
     font-size: 1.5rem;
-    background-color: #898e8e;
-    color:rgb(0, 0, 0);
-    border: 2px solid black;
+    background-color: #FDCE85;
+    color:#724200;
+    border: 2px solid #F9E1C6;
     border-radius: 10px;
 }
 
 .Start-button {
     padding: 15px 40px;
     font-size: 1.5rem;
-    background-color: #898e8e;
-    color:rgb(0, 0, 0);
-    border: 2px solid black;
+    background-color: #FDCE85;
+    color:#724200;
+    border: 2px solid #F9E1C6;
     border-radius: 10px;
     margin-top: 20px;
 }
