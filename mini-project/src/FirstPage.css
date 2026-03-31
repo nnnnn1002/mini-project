@@ -8,22 +8,23 @@
 }
 
 .Title {
-    font-size: 3rem;
+    font-size: 10rem;
     color: #df421e;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .Description {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     color: #383832;
-    margin-bottom: 60px;
+    margin-top: -10px;
+    margin-bottom: 50px;
 }
 
 .Howtodo-button {
     padding: 15px 40px;
     font-size: 1.5rem;
-    background-color: #0d8581;
-    color:rgb(43, 235, 88);
+    background-color: #898e8e;
+    color:rgb(0, 0, 0);
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -31,8 +32,9 @@
 .Start-button {
     padding: 15px 40px;
     font-size: 1.5rem;
-    background-color: #0d8581;
-    color:rgb(43, 235, 88);
+    background-color: #898e8e;
+    color:rgb(0, 0, 0);
     border: 2px solid black;
     border-radius: 10px;
+    margin-top: 20px;
 }
