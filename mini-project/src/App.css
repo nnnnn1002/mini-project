@@ -1,5 +1,12 @@
+/* App.css */
+body {
+    margin: 0;
+    background-color: #FAA733;
+    overflow: hidden;
+}
+
 .App {
-    background-color: #FAA733; /* ⭐ 현재 고향 비빔밥의 주황색 계열 배경 */
-    min-height: 100vh;        /* 화면 높이를 100% 꽉 채우도록 설정 */
+    min-height: 100vh;
     width: 100%;
+ 
 }

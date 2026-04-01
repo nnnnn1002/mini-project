@@ -1,19 +1,32 @@
 import React from 'react';
-import './Start1.css'; // CSS 파일도 같이 있다면 연결!
+import './Start1.css';
 
 function Start1() {
   return (
     <div className="Start1Container">
-      <h1>돌솥 비빔밥 만들기 화면</h1>
-      <p>여기에 아까 그린 돌솥이랑 재료들이 들어갈 거예요!</p>
-      
-      {/* 나중에 여기에 그림들을 넣을 겁니다 */}
-      <div className="DolsotSection">
-        {/* <img src={DolsotImg} alt="돌솥" /> */}
-      </div>
+      <p className="Title">재료 선택하기</p>
+        <div className ="button-container">
+          <button className = "rice">밥</button>
+          <button className ="pasta">파스타면</button>
+          <button className="vietnamNoodle">쌀국수면</button>
+          <button className="egg">계란 후라이</button>
+          <button className="sweetpotato">고구마</button>
+          <button className="salmon">애호박</button>
+          <button className="salmon">당근</button>
+          <button className="salmon">돈까스</button>
+          <button className="salmon">표고버섯</button>
+          <button className="salmon">볶음 김치</button>
+          <button className="salmon">시금치</button>
+          <button className="salmon">연어</button>
+          <button className="salmon">콩나물</button>
+          <button className="salmon">고추장</button>
+          <button className="salmon">체다치즈</button>
+          <button className="salmon">고사리</button>
+          <button className="salmon">무생채</button>
+          <button className="salmon">파</button>
+        </div>
     </div>
   );
 }
 
-// ⭐ 이 줄이 제일 중요해요! 이래야 App.jsx가 이 파일을 알아봅니다.
-export default Start1;
+export default Start1;5
