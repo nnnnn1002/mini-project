@@ -8,8 +8,8 @@
 }
 
 .Title {
-    font-size: 10rem;
-    color: #C81E00;
+    font-size: 10rem !important;
+    color: #C81E00 !important;
     margin-bottom: 0px;
 }
 
