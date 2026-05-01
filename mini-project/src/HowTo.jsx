@@ -1,13 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './HowTo.css'; // CSS 파일도 연결해두면 좋아요!
+import './HowTo.css'; 
 
 function HowTo() {
   const navigate = useNavigate();
 
   return (
     <div className="HowToContainer">
-      <h1>[ 게임 설명 ]</h1>
+      <h1 className="Title2"> 게임 설명 </h1>
       <div className="Content">
         <p>1. 시작 버튼을 눌러 게임을 시작하세요.</p>
         <p>2. 화면에 나오는 재료들 중 비빔밥에 꼭 필요한 재료를 선택하세요.</p>

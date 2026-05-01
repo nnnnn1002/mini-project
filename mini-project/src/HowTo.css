@@ -1,0 +1,24 @@
+.Title2 {
+    font-size: 1.5rem;
+    color: #724200;
+    text-align: left !important;
+    margin-left: 60px !important;
+}
+
+.Content {
+    font-size: 1.5rem;
+    color: #724200;
+    margin-top: -5px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+.Back-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #FDCE85;
+    color:#724200;
+    border: 2px solid #F9E1C6;
+    border-radius: 10px;
+    margin-left: 60px;
+}
