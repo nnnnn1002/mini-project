@@ -7,15 +7,17 @@ function HowTo() {
 
   return (
     <div className="HowToContainer">
-      <h1 className="Title3"> 게임 설명 </h1>
+      <h1 className="Title3-1"> 게임 설명 </h1>
       <div className="Content">
         <p>1. 시작 버튼을 눌러 게임을 시작하세요.</p>
         <p>2. 화면에 나오는 재료들 중 비빔밥에 꼭 필요한 재료를 선택하세요.</p>
-        <p>3. 고향의 맛을 재현하면 성공!</p>
+        <p>3. 비빔밥을 섞을 식기를 선택하세요.</p>
+        <p>4. 비빔밥과 함께 마실 음료를 선택하세요.</p>
+        <p>5. 고향의 맛을 재현하면 성공!</p>
       </div>
       
       {/* 다시 메인 화면으로 돌아가는 버튼 */}
-      <button className="Back-button" onClick={() => navigate('/')}>
+      <button className="Back-button1" onClick={() => navigate('/')}>
         뒤로 가기
       </button>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Start1.css';
 import dolsot from './assets/dolsot.png';
+import { useNavigate } from 'react-router-dom';
 
 const INGREDIENTS = [
       { id: 'rice', name: '밥', top: '165px', left: '240px', size : '200px' },
@@ -16,11 +17,11 @@ const INGREDIENTS = [
       { id: 'spinach', name: '시금치', top: '120px', left: '400px', size : '170px' },
       { id: 'salmon', name: '연어', top: '120px', left: '345px', size : '160px' },
       { id: 'bean', name: '콩나물', top: '130px', left: '310px', size : '140px' },
-      { id: 'sauce', name: '고추장', top: '180px', left: '195px' , size : '200px'},
-      { id: 'cheese', name: '체다치즈', top: '165px', left: '155px', size : '200px' },
-      { id: 'brown', name: '고사리', top: '270px', left: '180px' , size : '200px'},
-      { id: 'raddish', name: '무생채', top: '235px', left: '215px' , size : '200px'},
-      { id: 'green', name: '파', top: '155px', left: '245px' , size : '200px'},
+      { id: 'sauce', name: '고추장', top: '180px', left: '350px' , size : '150px'},
+      { id: 'cheese', name: '체다치즈', top: '190px', left: '400px', size : '130px' },
+      { id: 'brown', name: '고사리', top: '190px', left: '415px' , size : '150px'},
+      { id: 'raddish', name: '무생채', top: '195px', left: '450px' , size : '140px'},
+      { id: 'green', name: '파', top: '185px', left: '360px' , size : '180px'},
 ];
 
 function Start1() {
@@ -33,6 +34,8 @@ function Start1() {
       const getImageUrl = (id) => {
         return new URL(`./assets/${id}.png`, import.meta.url).href;
       };
+
+      const navigate = useNavigate();
 
       return (
         <div className="Start1Container">
@@ -57,6 +60,8 @@ function Start1() {
               </button>
             ))}
           </div>
+          <div className="goToMain" onClick={() => navigate('/')}> { "<" } </div>
+          <div className="goToNext" onClick={() => navigate('/tools')}> { ">" } </div>
         </div>
   );
 }

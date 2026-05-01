@@ -53,3 +53,32 @@
     flex-basis: 135px;
 }
 
+.goToMain {
+    padding: 16px 24px;
+    font-size: 1rem;
+    background-color: #E8B86D;
+    color: #724200;
+    border: 2px solid #D48F36;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-basis: 135px;
+    position: absolute; 
+    top: 350px;          
+    right: 1305px;
+    transform: translateY(-50%);
+}
+
+.goToNext {
+    padding: 16px 24px;
+    font-size: 1rem;
+    background-color: #E8B86D;
+    color: #724200;
+    border: 2px solid #D48F36;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-basis: 135px;
+    position: absolute; 
+    top: 350px;          
+    right: 50px;
+    transform: translateY(-50%);
+}
