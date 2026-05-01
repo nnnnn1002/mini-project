@@ -13,13 +13,46 @@
     font-weight: bold;
 }
 
+.spoon {
+    padding: 20px 32px !important;
+    font-size: 1.5rem !important;
+    background-color: #FDCE85;
+    color: #724200;
+    border: 2px solid #F9E1C6;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-basis: 135px;
+}
+
+.fork {
+     padding: 20px 32px !important;
+    font-size: 1.5rem !important;
+    background-color: #FDCE85;
+    color: #724200;
+    border: 2px solid #F9E1C6;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-basis: 135px;
+}
+
+.hand {
+     padding: 20px 32px !important;
+    font-size: 1.5rem !important;
+    background-color: #FDCE85;
+    color: #724200;
+    border: 2px solid #F9E1C6;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-basis: 135px;
+}
 
 
 
 .Back-button {
     padding: 16px 24px;
     font-size: 1rem;
-    background-color: #E8B86D;
+    background-color: #ffffff;
+    opacity: 40%;
     color: #724200;
     border: 2px solid #D48F36;
     border-radius: 50% !important;
@@ -36,7 +69,8 @@
 .Drink {
     padding: 16px 24px;
     font-size: 1rem;
-    background-color: #E8B86D;
+    background-color: #ffffff;
+    opacity: 40%;
     color: #724200;
     border: 2px solid #D48F36;
     border-radius: 50% !important;

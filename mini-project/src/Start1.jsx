@@ -37,6 +37,10 @@ function Start1() {
 
       const navigate = useNavigate();
 
+      const handleNextPage = () => {
+      navigate('/Tools', { state: { activeItems: activeItems } });
+      };
+
       return (
         <div className="Start1Container">
           <p className="Title2">재료 선택하기</p>

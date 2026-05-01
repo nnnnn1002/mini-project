@@ -56,7 +56,8 @@
 .goToMain {
     padding: 16px 24px;
     font-size: 1rem;
-    background-color: #E8B86D;
+    background-color: #ffffff;
+    opacity: 40%;
     color: #724200;
     border: 2px solid #D48F36;
     border-radius: 50%;
@@ -71,7 +72,8 @@
 .goToNext {
     padding: 16px 24px;
     font-size: 1rem;
-    background-color: #E8B86D;
+    background-color: #ffffff;
+    opacity: 40%;
     color: #724200;
     border: 2px solid #D48F36;
     border-radius: 50%;
