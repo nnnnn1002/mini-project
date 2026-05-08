@@ -34,11 +34,10 @@ function Tools() {
         <button className="hand" onClick={() => toggleTool('india')}>손</button>
       </div>
       
-      {/* 이동 버튼 */}
       <button className="Back-button" onClick={() => navigate('/Start1')}>
         { "<" }
       </button>
-      <button classname="Drink" onClick={() => navigate('/loading', { state: { activeItems, activeTool } })}>
+      <button className="goforloading" onClick={() => navigate('/loading', { state: { activeItems, activeTool } })}>
         { ">" }
       </button>
     </div>
