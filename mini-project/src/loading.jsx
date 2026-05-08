@@ -7,15 +7,11 @@ function Loading() {
   const [isDone, setIsDone] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const { activeItems, activeTool } = location.state || { activeItems: [], activeTool: null };
 
-  const msgs = [
-    "재료를 고루 섞는 중...",
-    "테이블 정돈 중...",
-    "수저 세팅 중...",
-    "음료 세팅 중...",
-    "거의 다 됐어요!"
-  ];
+  // isSuccess를 포함하여 모든 데이터 받기
+  const { activeItems, activeTool, isSuccess } = location.state || { activeItems: [], activeTool: null, isSuccess: false };
+
+  const msgs = ["재료를 고루 섞는 중...", "테이블 정돈 중...", "수저 세팅 중...", "음료 세팅 중...", "거의 다 됐어요!"];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -27,33 +23,24 @@ function Loading() {
         }
         return prev + 1;
       });
-    }, 60);
+    }, 40);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="LoadingContainer">
       <div className={`bowl-anim ${isDone ? '' : 'spinning'}`}>🥄</div>
-
       {!isDone ? (
         <>
-          <p className="loading-title">
-            조금만 기다려주세요!<span className="dots"><span>.</span><span>.</span><span>.</span></span>
-          </p>
-          <div className="bar-bg">
-            <div className="bar-fill" style={{ width: `${pct}%` }} />
-          </div>
+          <p className="loading-title">조금만 기다려주세요!</p>
+          <div className="bar-bg"><div className="bar-fill" style={{ width: `${pct}%` }} /></div>
           <p className="pct">{pct} / 100</p>
           <p className="msg">{msgs[Math.floor(pct / 20)] || msgs[4]}</p>
         </>
       ) : (
         <>
           <p className="done-title">고향 비빔밥 완성</p>
-          <p className="done-title-result">과연 고향에서 먹던 비빔밥을 잘 흉내내었을까요??</p>
-          <button
-            className="result-btn"
-            onClick={() => navigate('/result', { state: { activeItems, activeTool } })}
-          >
+          <button className="result-btn" onClick={() => navigate('/result', { state: { activeItems, activeTool, isSuccess } })}>
             결과 보기
           </button>
         </>
@@ -61,5 +48,4 @@ function Loading() {
     </div>
   );
 }
-
 export default Loading;

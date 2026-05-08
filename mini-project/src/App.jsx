@@ -3,9 +3,9 @@ import FirstPage from './FirstPage';
 import HowTo from './HowTo';
 import Start1 from './Start1';
 import Tools from './tools';
-import './App.css';
 import Loading from './Loading';
-
+import Result from './Result';
+import './App.css';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/HowTo" element={<HowTo />} /> 
           <Route path="/tools" element={<Tools/>}/>
           <Route path="/loading" element={<Loading />} />
+          <Route path="/result" element={<Result />} />
       </Routes>
     </div>
   );
