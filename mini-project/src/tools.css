@@ -5,7 +5,6 @@
     min-height: 100vh;
 }
 
-
 .Title4 {
     font-size: 60px;
     color: #5e3804;
@@ -13,73 +12,74 @@
     font-weight: bold;
 }
 
+.dolsotKit {
+    width: 50%;
+}
+
 .spoon {
-    padding: 20px 32px !important;
-    font-size: 1.5rem !important;
+    padding: 20px 32px;
+    font-size: 1.5rem;
     background-color: #FDCE85;
     color: #724200;
     border: 2px solid #F9E1C6;
     border-radius: 10px;
     cursor: pointer;
-    flex-basis: 135px;
 }
 
 .fork {
-     padding: 20px 32px !important;
-    font-size: 1.5rem !important;
+    padding: 20px 32px;
+    font-size: 1.5rem;
     background-color: #FDCE85;
     color: #724200;
     border: 2px solid #F9E1C6;
     border-radius: 10px;
     cursor: pointer;
-    flex-basis: 135px;
 }
 
 .hand {
-     padding: 20px 32px !important;
-    font-size: 1.5rem !important;
+    padding: 20px 32px;
+    font-size: 1.5rem;
     background-color: #FDCE85;
     color: #724200;
     border: 2px solid #F9E1C6;
     border-radius: 10px;
     cursor: pointer;
-    flex-basis: 135px;
 }
 
-
-
 .Back-button {
-    padding: 16px 24px;
+    width: 50px;
+    height: 50px;
     font-size: 1rem;
     background-color: #ffffff;
-    opacity: 40%;
+    opacity: 0.4;
     color: #724200;
     border: 2px solid #D48F36;
-    border-radius: 50% !important;
+    border-radius: 50%;
     cursor: pointer;
-    flex-basis: 135px;
-    position: absolute; 
-    top: 350px;          
-    right: 1305px;
+    position: fixed;        /* absolute → fixed */
+    top: 50%;               /* 350px → 50% */
+    left: 40px;             /* right 1305px → left 40px */
     transform: translateY(-50%);
-    flex-basis: auto !important;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Drink {
-    padding: 16px 24px;
+    width: 50px;
+    height: 50px;
     font-size: 1rem;
     background-color: #ffffff;
-    opacity: 40%;
+    opacity: 0.4;
     color: #724200;
     border: 2px solid #D48F36;
-    border-radius: 50% !important;
+    border-radius: 50%;
     cursor: pointer;
-    flex-basis: 135px;
-    position: absolute; 
-    top: 350px;          
-    right: 50px;
+    position: fixed;        
+    top: 50%;               
+    right: 40px;
     transform: translateY(-50%);
-    flex-basis: auto !important;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

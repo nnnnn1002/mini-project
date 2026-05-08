@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import dolsot from './assets/dolsot.png';
+import dolsotKit from './assets/dolsotKit.png';
 import './tools.css'; 
 
 function Tools() {
@@ -20,7 +20,7 @@ function Tools() {
       <h1 className="Title4"> 도구 선택 </h1>
 
       <div className="bowl" style={{ position: 'relative' }}>
-        <img src={dolsot} alt="돌솥" className="dolsot-img" />
+        <img src={dolsotKit} alt="돌솥 키트" className="dolsotKit" />
         
         
         {activeTool === 'kor' && <img src="/assets/kor.png" className="selected-tool" alt="숟가락" />}
@@ -38,7 +38,7 @@ function Tools() {
       <button className="Back-button" onClick={() => navigate('/Start1')}>
         { "<" }
       </button>
-      <button className="Drink" onClick={() => navigate('/Drink', { state: { activeItems, activeTool } })}>
+      <button classname="Drink" onClick={() => navigate('/loading', { state: { activeItems, activeTool } })}>
         { ">" }
       </button>
     </div>
