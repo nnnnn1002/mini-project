@@ -51,7 +51,7 @@ function Start1() {
                 <img 
                   key={item.id}
                   src={getImageUrl(item.id)}
-                  style={{ position: 'absolute', top: item.top, left: item.left, width: item.size }}
+                  style={{ position: 'absolute', top: item.top, left: item.left, width: item.size, maxWidth: '22%' }}
                   alt=""
                 />
               )
