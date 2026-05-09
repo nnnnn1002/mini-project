@@ -146,6 +146,6 @@
 
 @media (max-width: 768px) {
     .bowl img:not(.dolsot-img) {
-        transform: translateX(10%) !important;
+        transform: translateX(-10%) !important;
     }
 }
