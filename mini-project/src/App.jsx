@@ -15,8 +15,8 @@ function App() {
           <Route path="/Start1" element={<Start1 />} />
           <Route path="/HowTo" element={<HowTo />} /> 
           <Route path="/tools" element={<Tools/>}/>
-          <Route path="/loading" element={<Loading />} />
-          <Route path="/result" element={<Result />} />
+          <Route path="/Loading" element={<Loading />} />
+          <Route path="/Result" element={<Result />} />
       </Routes>
     </div>
   );
