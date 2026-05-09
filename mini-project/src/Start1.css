@@ -84,3 +84,59 @@
     right: 50px;
     transform: translateY(-50%);
 }
+
+@media (max-width: 768px) {
+  /* 1. 제목 크기 조절 */
+  .Title2 {
+    font-size: 32px;      /* 60px은 너무 커서 두 줄로 깨질 수 있어요 */
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  /* 2. 돌솥 이미지 크기 (가장 큰 문제!) */
+  .dolsot-img {
+    width: 90%;          /* 900px 고정 대신 화면 너비의 90%로 */
+    max-width: 400px;    /* 너무 커지지 않게 제한 */
+    height: auto;
+  }
+
+  .bowl {
+    margin-top: -50px;   /* 데스크탑의 -150px은 모바일에서 너무 위로 올라가요 */
+  }
+
+  /* 3. 하단 버튼 컨테이너 */
+  .button-container {
+    bottom: 10px;        /* 여백 살짝 조절 */
+    gap: 8px;            /* 버튼 사이 간격 축소 */
+    padding: 10px;
+  }
+
+  .button-container button {
+    flex-basis: 45%;     /* 버튼 두 개씩 나란히 배치되도록 */
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* 4. 좌우 이동 버튼 (goToMain, goToNext) */
+  /* 모바일에서는 절대 위치(px) 대신 적절한 위치로 재배치해야 합니다 */
+  .goToMain, .goToNext {
+    width: 50px;         /* 원형 버튼 크기 고정 */
+    height: 50px;
+    padding: 0;
+    top: 50%;            /* 화면 세로 중앙 근처 */
+    right: auto;         /* 기존 1305px 설정 초기화 */
+    flex-basis: auto;    /* flex 영향 제거 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .goToMain {
+    left: 10px;          /* 왼쪽 끝에서 10px */
+    right: auto;
+  }
+
+  .goToNext {
+    right: 10px;         /* 오른쪽 끝에서 10px */
+  }
+}

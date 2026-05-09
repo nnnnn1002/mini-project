@@ -261,3 +261,72 @@
 .fail-retry:hover {
   background-color: #5e3804;
 }
+
+/* 📱 모바일 대응 (화면 너비 768px 이하) */
+@media (max-width: 768px) {
+  
+  /* 1. 전체적인 텍스트 크기 축소 */
+  .arrive-title {
+    font-size: 40px; /* 64px -> 40px */
+  }
+  
+  .arrive-sub {
+    font-size: 20px; /* 28px -> 20px */
+  }
+
+  .arrive-sub2 {
+    font-size: 18px; /* 24px -> 18px */
+  }
+
+  /* 2. 이모지 크기 조절 */
+  .bowl-emoji {
+    font-size: 80px; /* 120px -> 80px */
+  }
+
+  .riding-cloud {
+    font-size: 60px; /* 90px -> 60px */
+    margin-top: -20px;
+  }
+
+  .tray-emoji {
+    font-size: 100px; /* 140px -> 100px */
+  }
+
+  /* 3. 배경 구름 크기 축소 */
+  .cloud {
+    font-size: 40px !important; /* 모바일에서는 구름이 너무 크지 않게 */
+  }
+  .c1 { font-size: 50px !important; }
+
+  /* 4. 실패 시 말풍선 너비 및 텍스트 조절 */
+  .speech-bubble {
+    padding: 24px 30px; /* 패딩 축소 */
+    width: 85%;         /* 화면 너비의 85%만 차지하게 */
+    box-sizing: border-box;
+  }
+
+  .bubble-text {
+    font-size: 24px; /* 36px -> 24px */
+  }
+
+  .bubble-text2 {
+    font-size: 18px; /* 28px -> 18px */
+  }
+
+  /* 5. 버튼 크기 조정 */
+  .retry-btn {
+    width: 80%;       /* 버튼이 너무 작지 않게 가로로 길게 */
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}
+
+/* 📱 아주 작은 화면 (아이폰 SE 등, 380px 이하) */
+@media (max-width: 380px) {
+  .arrive-title {
+    font-size: 32px;
+  }
+  .bowl-emoji {
+    font-size: 70px;
+  }
+}

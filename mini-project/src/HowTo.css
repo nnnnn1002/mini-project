@@ -22,3 +22,34 @@
     border-radius: 10px;
     margin-left: 60px;
 }
+
+@media (max-width: 768px) {
+    .Title3-1 {
+        font-size: 2rem;
+        margin-left: 20px !important;
+    }
+    .Content {
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .Back-button1 {
+        font-size: 1rem;
+        padding: 8px 16px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Title3-1 {
+        font-size: 1.5rem;
+        margin-left: 16px !important;
+    }
+    .Content {
+        font-size: 0.9rem;
+        margin-left: 16px;
+    }
+    .Back-button1 {
+        margin-left: 16px;
+    }
+}
