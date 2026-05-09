@@ -143,3 +143,9 @@
     .goToMain { left: 10px !important; }
     .goToNext { right: 10px !important; }
 }
+
+@media (max-width: 768px) {
+    .bowl img:not(.dolsot-img) {
+        transform: translateX(10%) !important;
+    }
+}
