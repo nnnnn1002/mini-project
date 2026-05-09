@@ -6,74 +6,109 @@
 }
 
 .Title4 {
-    font-size: 60px;
+    font-size: 54px;
     color: #5e3804;
-    text-align: center;
     font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.tray-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ── 트레이 위 아이템 배치 ── */
+.bowl-wrap {
+    position: relative;
 }
 
 .dolsotKit {
-    width: 50%;
+    width: 680px;
+    height: auto;
 }
 
-.spoon {
-    padding: 20px 32px;
-    font-size: 1.5rem;
-    background-color: #FDCE85;
-    color: #724200;
-    border: 2px solid #F9E1C6;
-    border-radius: 10px;
-    cursor: pointer;
+/* 수저와 음료가 트레이 이미지의 빈 공간에 맞게 올라가도록 위치 조정 */
+.placed-tool, .placed-drink {
+    position: absolute;
+    height: auto;
+    pointer-events: none; /* 클릭 방해 금지 */
 }
 
-.fork {
-    padding: 20px 32px;
-    font-size: 1.5rem;
-    background-color: #FDCE85;
-    color: #724200;
-    border: 2px solid #F9E1C6;
-    border-radius: 10px;
-    cursor: pointer;
+.placed-tool {
+    width: 360px;
+    top: 45%;  /* 트레이 수저 칸 위치에 맞춰 조절하세요 */
+    right: 3px !important;
 }
 
-.hand {
-    padding: 20px 32px;
-    font-size: 1.5rem;
-    background-color: #FDCE85;
-    color: #724200;
-    border: 2px solid #F9E1C6;
-    border-radius: 10px;
-    cursor: pointer;
+.placed-drink {
+    width: 250px;
+    top: 10%;  /* 트레이 음료 칸 위치에 맞춰 조절하세요 */
+    right: 8%;
 }
 
-.Back-button {
-    padding: 16px 24px;
-    font-size: 1rem;
-    background-color: #ffffff;
-    opacity: 40%;
+/* ── 우측 버튼 패널 ── */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.selection-label {
+    font-size: 30px;
+    color: #5e3804;
+    font-weight: bold;
+    margin: 0;
+}
+
+.slot-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* ── 버튼 디자인 & 세련된 활성화 색상 ── */
+.choice-btn {
+    padding: 18px 28px;
+    font-size: 1.1rem;
+    background-color: #FDCE85; /* 기본 베이지 */
     color: #724200;
-    border: 2px solid #D48F36;
-    border-radius: 50%;
+    border: 1.5px solid #F9E1C6;
+    border-radius: 12px;
     cursor: pointer;
-    flex-basis: 135px;
-    position: absolute; 
-    top: 350px;          
-    right: 1305px;
+    transition: all 0.2s ease;
+}
+
+.choice-btn:hover {
+    background-color: #fbd69a;
+}
+
+/* 클릭(활성화) 되었을 때: 훨씬 차분하고 고급스러운 브라운 */
+.choice-btn.active {
+    background-color: #5e3804; /* 깊은 초콜릿 브라운 */
+    color: #ffffff;            /* 글자는 하얗게 강조 */
+    border-color: #3e2502;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* 살짝 올라오는 효과 */
+}
+
+/* 화살표 버튼 */
+.Back-button, .goforloading {
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid #D48F36;
+    border-radius: 50%;
+    padding: 14px 20px;
+    cursor: pointer;
 }
 
-.goforloading {
-   padding: 16px 24px;
-    font-size: 1rem;
-    background-color: #ffffff;
-    opacity: 40%;
-    color: #724200;
-    border: 2px solid #D48F36;
-    border-radius: 50%;
-    cursor: pointer;
-    flex-basis: 135px;
-    position: absolute; 
-    top: 350px;          
-    right: 50px;
-    transform: translateY(-50%);
-}
+.Back-button { left: 40px; }
+.goforloading { right: 40px; }

@@ -65,7 +65,7 @@ function Start1() {
             ))}
           </div>
           <div className="goToMain" onClick={() => navigate('/')}> { "<" } </div>
-          <div className="goToNext" onClick={() => navigate('/tools')}> { ">" } </div>
+          <div className="goToNext" onClick={() => navigate('/tools', { state: { activeItems } })}> { ">" } </div>
         </div>
   );
 }
