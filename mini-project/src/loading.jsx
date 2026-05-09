@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './Loading.css';
+import './loading.css';
 
 const CORRECT_ITEMS = ['rice', 'egg', 'pumpkin', 'carrot', 'mushroom', 'spinach', 'bean', 'sauce', 'brown', 'raddish'];
 const CORRECT_TOOL  = 'kor';
