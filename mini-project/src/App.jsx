@@ -3,8 +3,8 @@ import FirstPage from './FirstPage';
 import HowTo from './HowTo';
 import Start1 from './Start1';
 import Tools from './tools';
-import Loading from './Loading';
-import Result from './Result';
+import Loading from './loading';
+import Result from './result';
 import './App.css';
 
 function App() {
